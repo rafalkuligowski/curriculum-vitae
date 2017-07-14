@@ -1,0 +1,257 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="Stylesheet" type="text/css" href="style.css"/>
+		<link rel="Stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		
+		<script src="jquery.scrollTo.min.js"></script>
+		
+		<script>		
+			jQuery(function($)
+			{
+				$.scrollTo(0);
+				$('#link1').click(function() {$.scrollTo($('#Edukacja'),500); });
+				$('#link2').click(function() {$.scrollTo($('#Kwalifikacje'),500); });
+				$('#link3').click(function() {$.scrollTo($('#Doswiadczenie'),500); });
+				$('#link4').click(function() {$.scrollTo($('#Ukonczone'),500); });
+				$('#link5').click(function() {$.scrollTo($('#Umiejetnosci'),500); });
+				$('#link6').click(function() {$.scrollTo($('#Zainteresowania'),500); });
+				$('.scrollup').click(function() {$.scrollTo($('body'),1000); });			
+			}			
+			);			
+			//odkryte podczas przewijania strony
+			$(window).scroll(function()
+			{
+			if($(this).scrollTop()>200) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();			
+			}
+			);
+		
+		</script>
+	</head>
+	<body>	
+		<div class="cv">
+			<div class="left">
+				<div class="dane">
+					<div class="foto">
+						<img class src="img/foto.jpg" alt="moje zdjęcie">
+						<p>Rafał Kuligowski</p>
+						<hr />
+					</div>
+					<div class="kontakt">
+						<div class="row">
+							<div class="cell">Data urodzenia</div>
+							<div class="cell">11.08.1987 r.</div>
+						</div>						
+						<div class="row">
+							<div class="cell">Adres</div>
+							<div class="cell">ul. Wojska Polsiego 51/4, 16-300 Augustów</div>
+						</div>
+						<div class="row">
+							<div class="cell">e-mail</div>
+							<div class="cell">rafal.kuligowski87@gmail.com</div>
+						</div>
+						<div class="row">
+							<div class="cell">Telefon</div>
+							<div class="cell">+48 727 907 049</div>
+						</div>					
+					</div>
+					<hr />
+					<div class="workSummary">
+						<h1>Work Summary</h1>
+						<div class="list">						
+							<div class="work">HTML</br></div>
+							<div class="work">CSS</br></div>
+							<div class="work">jQuery</br></div>
+							<div class="work">Wyższe wykształcenie techniczne</br></div>
+							<div class="work">Narzędzia lean manufacturing</br></div>
+							<div class="work">Sprzedaż systemów informatycznych</br></div>
+							<div class="work">Organizacja pracy na liniach produkcyjnych</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<a href="#" class="scrollup"></a>
+				<div class ="spis">
+					<ol class="spis2">
+						<li class="fa"><a id="link1" href="#">edukacja</a></li> <br \>
+						<li class="fa"><a id="link2" href="#">kwalifikacje</a></li>
+						<li class="fa"><a id="link3" href="#">doświadczenie zawodowe</a></li>
+						<li class="fa"><a id="link4" href="#">ukończone szkolenie</a></li>
+						<li class="fa"><a id="link5" href="#">umiejętności</a></li>
+						<li class="fa"><a id="link6" href="#">zainteresowania</a></li>						
+					</ol>
+				</div>
+				<div class="top">
+					<h1 id="Edukacja">Edukacja</h1>
+					<div class="part">
+						<div class="row">
+							<div class="cell rightColumn1">10.2008 - 06.2013</div>
+							<div class="cell">
+								Politechnika Białostocka,Studia dzienne, stacjonarne, II stopnia, kierunek: Zarządzanie i Inżynieria Produkcji, Temat pracy w zakresie MES - analiza rozkładu naprężeo w tarczy hamulcowej
+							</div>	
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">10.2006 – 06.2011</div>
+							<div class="cell">
+								Politechnika Białostocka, Studia dzienne, stacjonarne, I stopnia, kierunek: Zarządzanie
+							</div>	
+						</div>
+						
+					</div>
+				</div>
+				<div class="top">
+					<h1 id="Kwalifikacje">Kwalifikacje</h1>
+						<div class="part">
+							<div class="row">
+								<div class="cell rightColumn1">03.2015</div>
+								<div class="cell">
+									Magister inżynier Zarządzania i Inżynierii Produkcji
+								</div>	
+							</div>
+							<div class="row">
+								<div class="cell rightColumn1">11-12.2015</div>
+								<div class="cell">
+									Wolontariusz - Lider zespołu w Szlachetnej Paczce
+								</div>
+							</div>
+							<div class="row">
+								<div class="cell rightColumn1">06.2011</div>
+								<div class="cell">
+									Lincencjat z Zarządania
+								</div>
+							</div>							
+						</div>
+				</div>
+				<div class="top">
+					<h1 id="Doswiadczenie">Doświadczenie zawodowe</h1>
+					<div class="part">
+						<div class="row">
+							<div class="cell rightColumn1">01.09.2015 - 31.05.2017</div>
+							<div class="cell">
+								Everest-IT Sp. z o. o.
+							</div>	
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">Stanowisko</div>
+							<div class="cell">
+								Key Account Manager
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">Obowiązki</div>
+							<div class="cell">
+								<ul>
+									<li>Bieżąca obsługa kluczowych klientów</li>
+									<li>Sprzedaż systemów informatycznych</li>
+									<li>Przygotowanie ofert, materiałów marketingowych</li>
+									<li>Pozyskiwanie klientów</li>
+									<li>Utrzymanie relacji z klientami</li>
+									<li>Udział w spotkaniach w tematach usprawnień produkcyjnych od strony informatycznej</li>									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<hr />
+					<div class="part">
+						<div class="row">
+							<div class="cell rightColumn1">01.2013 - 08.2015</div>
+							<div class="cell">
+								Bianor Sp. z o. o. Białystok, Plastic and Contract Manufacturing
+							</div>	
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">Stanowisko</div>
+							<div class="cell">
+								Inżynier procesu
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">Obowiązki</div>
+							<div class="cell">
+								<ul>
+									<li>Wykonywanie raportów (OEE)</li>
+									<li>Udział w zespole do wdrożenia Lean management</li>
+									<li>Przeprowadzenie szkolenia wprowadzającego w Lean</li>
+									<li>Usprawnienie procesów produkcyjnych</li>
+									<li>Rozwiązywanie bieżących problemów produkcyjnych</li>
+									<li>Analizowanie wskaźnika PPM i wprowadzanie działao naprawczych</li>
+									<li>Generowanie oszczędności poprzez redukcję kosztów</li>
+									<li>Wdrażanie standaryzacji oraz balansowania pracy</li>
+									<li>Tworzenie dokumentacji przy wdrażaniu nowych produktów</li>
+									<li>Wprowadzanie detali do systemu rejestracji wag, korygowanie rozbieżności</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">Osiągnięcia</div>
+							<div class="cell">
+								Optymalizacja metod pakowania detali, wdrażanie narzędzi len (redukcja powierzchni i zapasów, muda, wzrost produktywności), wprowadzenie rozwiązania zapobiegającemu znajdowania się ułamanych noży w brakach, standaryzacja podajników do tworzywa - redukcja zbędnych kosztów tworzywa
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top">
+					<h1 id="Ukonczone">Ukończone Szkolenia</h1>
+					<div class="part">
+						<div class="row">
+							<div class="cell rightColumn1">1-3.07.2011r.</div>
+							<div class="cell">
+								Białystok - Ukończenie szkolenia: Auditor Wewnętrzny Zintegrowanego Systemu Zarządzania Jakością, Środowiskiem i BHP wg wymagao normy ISO 9001: 2008, ISO 14001: 2004, PN-N-18001: 2004 przeprowadzony przez Germanischer Lloyd Polen Sp. z.o.o
+							</div>	
+						</div>
+						<div class="row">
+							<div class="cell rightColumn1">17-23.11.2008r.</div>
+							<div class="cell">
+								Białystok - Udział w szkoleniu SALE Projekt w komunikacji interpersonalnej w ramach Światowego Tygodnia Przedsiębiorczości w Polsce
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top">
+					<h1 id="Umiejetnosci">Umiejętności</h1>
+					<div class="part">
+					<div class="skills">
+						<ul>
+							<li>Znajomośd HTML i CSS</li>
+							<li>Podstawowa znajomośd jQuery</li>
+							<li>Dobre umiejętności komunikacyjne i interpersonalne</li>
+							<li>Umiejętnośd pracy pod presją krótkich terminów i warunkach stresowych</li>
+							<li>Umiejętnośd pracy z własnej inicjatywy</li>
+							<li>Nabywanie nowych umiejętności</li>
+							<li>Wyznaczanie i realizawanie celów</li>
+							<li>Umiejętnośd planowania dni, tygodni, lat</li>
+							<li>Umiejętnośd pracy w zespole</li>
+							<li>Prawo jazdy od 2006</li>
+							<li>Angielski na poziomie średnim</li>
+							<li>Niemiecki na poziomie podstawowym</li>
+							<li>Rosyjski – na poziomie zaawanowym</li>
+							<li>Znajomośd programów komputerowych - pakiet MS Office, SAP, znajomośd programu Symphony pakiet: Handel, Kadry i płace , podstawowa znajomośd AutoCad</li>	
+						</ul>						
+					</div>
+					</div>
+				</div>
+				<div class="top">
+					<h1 id="Zainteresowania">Zainteresowania</h1>
+					<div class="part">
+						<div class="skills">
+							<ul>
+								<li>Nowoczesne rozwiązania i innowacje techniczne stosowane w motoryzacji</li>
+								<li>Sport</li>
+							</ul>						
+						</div>
+					</div>
+				</div>				
+			</div>
+			<footer>
+				<div id="footer">
+					Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dn. 29.08.97 o Ochronie danych Osobowych Dz. U. nr 133 poz. 883 z późniejszymi zmianami.
+				</div>
+			</footer>			
+		</div>		
+	</body>
+</html>
